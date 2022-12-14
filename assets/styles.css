@@ -1,16 +1,21 @@
 :root {
+  /* COLOR VARIABLES */
   --color-primary: #000000;
   --color-main-background: #ffffff;
   --color-secondary: #d9d9d9;
   --color-lighter-secondary: #f2f2f2;
   --color-accent: #0065fc;
   --color-lighter-accent: #deebff;
-
+  /* FONT VARIABLES */
   --font-raleway: "Raleway", sans-serif;
   --font-small: 1rem;
   --font-big: 1.375rem;
   --font-regular: 400;
   --font-bold: 700;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -27,4 +32,29 @@ a:visited {
 .h1 {
   font-size: var(--font-big);
   font-weight: var(--font-bold);
+}
+
+.navbar {
+  background-color: var(--color-main-background);
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.navbar_links {
+  padding-right: 2rem;
+  position: absolute;
+  right: 0;
+}
+
+.navbar_links a {
+  margin-right: 3.5rem;
+}
+
+.navbar_logo {
+  width: 3.81rem;
+  height: 1.19rem;
+  margin: 2.75rem 0 0 3.43rem;
 }
