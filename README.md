@@ -9,7 +9,3 @@ This is the second coding project for my OpenClassroom online school. The projec
 - HTML
 - CSS
 - A tiny amount of JS for Normalize.css
-
-## To run this project
-
-- With node already installed: Just run npm i normalize.css
