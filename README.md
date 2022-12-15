@@ -12,4 +12,4 @@ This is the second coding project for my OpenClassroom online school. The projec
 
 ## To run this project
 
--With node already installed: Just run npm i normalize.css
+- With node already installed: Just run npm i normalize.css
