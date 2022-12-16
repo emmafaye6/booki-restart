@@ -101,7 +101,7 @@ h3 {
 }
 
 .searchbox input {
-  width: 250px;
+  width: 15.625rem;
   height: 2.95rem;
   border: 1px solid #f2f2f2;
   border-right: none;
@@ -149,8 +149,8 @@ h3 {
 }
 
 .filters__icons {
-  height: 22px;
-  width: 22px;
+  height: 1.375rem;
+  width: 1.375rem;
   padding-right: 0.7rem;
 }
 
@@ -162,8 +162,8 @@ h3 {
 
 .info__logo {
   display: inline;
-  height: 10px;
-  width: 5px;
+  height: 0.625rem;
+  width: 0.313rem;
   border: 2px solid #d9d9d9;
   border-radius: 40px;
   padding: 0.5rem 0.65rem;
@@ -188,8 +188,8 @@ h3 {
 
 .maincontainer {
   width: 55%;
-  min-width: 698px;
-  max-width: 785px;
+  min-width: 43.625rem;
+  max-width: 49.063rem;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -199,8 +199,8 @@ h3 {
 
 .secondarycontainer {
   width: 30%;
-  max-width: 440px;
-  min-width: 350px;
+  max-width: 27.5rem;
+  min-width: 21.875rem;
   margin-left: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -219,8 +219,8 @@ h3 {
 }
 
 .secondarycontainer_icon {
-  width: 18px;
-  height: 15.75px;
+  width: 1.125rem;
+  height: 0.984rem;
   margin-left: 7rem;
 }
 
@@ -257,6 +257,13 @@ h3 {
   height: 9rem;
   display: flex;
   line-height: 0;
+  margin-bottom: 1rem;
+}
+
+.secondarycard_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .secondarycard_textwrapper {
@@ -296,11 +303,10 @@ h3 {
 }
 
 .tallcard {
-  width: 280px;
-  height: 410px;
+  width: 17.5rem;
+  height: 25.625rem;
   margin-right: 0.5rem;
   margin-top: 1rem;
-  border-radius: 20px;
   border-radius: 20px;
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
 }
@@ -344,4 +350,58 @@ footer {
 }
 .footer_bold {
   font-weight: var(--font-bold);
+}
+
+/* TABLET MEDIA QUERIES */
+
+@media screen and (max-width: 992px) {
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  .maincontainer {
+    width: 90%;
+  }
+  .secondarycontainer {
+    width: 90%;
+    min-width: 50.19rem;
+  }
+  .secondarycard {
+    width: 15.75rem;
+    height: 9rem;
+    margin-right: 1rem;
+    line-height: 1rem;
+    font-size: 0.9rem;
+  }
+  .wrappertwo {
+    margin-top: 0;
+    justify-content: center;
+    margin-left: 1rem;
+  }
+
+  .secondarycard_wrapper {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tallcard {
+    width: 11.375rem;
+    height: 16.69rem;
+    margin-right: 1.5rem;
+    padding-bottom: 0.7rem;
+  }
+
+  .tallcard h3 {
+    margin-top: 0.4rem;
+  }
+
+  .footer {
+    padding: 2rem 5rem;
+  }
+}
+
+/* MOBILE MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
 }
