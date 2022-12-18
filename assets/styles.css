@@ -43,6 +43,10 @@ h3 {
   line-height: 1rem;
 }
 
+.filters_title {
+  font-size: 1.3rem;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -62,8 +66,10 @@ h3 {
 
 .navbar_links {
   padding-right: 2rem;
-  position: absolute;
-  right: 0;
+  margin-left: 54rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
 }
 
 .navbar_links a {
@@ -114,8 +120,15 @@ h3 {
   border: none;
   color: white;
   border-radius: 0px 15px 15px 0px;
-  padding: 17px;
+  padding: 5px 15px;
   cursor: pointer;
+}
+.search_logo {
+  display: none;
+}
+
+.search_text {
+  padding: 0;
 }
 
 .filters {
@@ -358,7 +371,12 @@ footer {
   h3 {
     font-size: 0.9rem;
   }
-
+  .search_logo {
+    display: none;
+  }
+  .search_text {
+    padding: 0;
+  }
   .maincontainer {
     width: 90%;
   }
@@ -404,4 +422,84 @@ footer {
 /* MOBILE MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0 0 1.5rem 0;
+    border-bottom: solid 2px var(--color-lighter-secondary);
+  }
+
+  .navbar_links {
+    margin: 0 0 0 0;
+    padding: 0;
+  }
+
+  .navbar_logo {
+    margin: 0;
+    padding: 0 0 2rem 0;
+  }
+
+  .navbar_links a:hover {
+    color: var(--color-accent);
+    padding: 0 0 1.5rem 0;
+    border-bottom: solid 2px var(--color-accent);
+    border-top: none;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .h1 {
+    width: 100%;
+  }
+  .search {
+    padding: 1rem;
+  }
+  .searchbox {
+    width: 12rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .search_text {
+    display: none;
+  }
+
+  .search_logo {
+    width: 17px;
+    height: 17px;
+    display: block;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filters {
+    padding-inline: 1rem;
+  }
+
+  .filters__buttons li {
+    font-size: 0.7rem;
+    padding: 0rem;
+    border-radius: 43px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 42px;
+    margin-left: 0.5rem;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
+  }
 }
