@@ -8,4 +8,3 @@ This is the second coding project for my OpenClassroom online school. The projec
   Extensions used: Prettier, Colorize and Live server
 - HTML
 - CSS
-- A tiny amount of JS for Normalize.css
