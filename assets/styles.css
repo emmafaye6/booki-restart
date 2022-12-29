@@ -434,17 +434,24 @@ footer {
 /* MOBILE MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   ul {
     padding: 0;
   }
 
   .h1 {
-    width: 100%;
+    width: fit-content;
   }
 
   /* MOBILE NAVBAR */
 
   .navbar {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -473,16 +480,17 @@ footer {
 
   .search {
     padding: 1rem;
+    width: 80%;
   }
   .searchbox {
-    width: 11rem;
+    width: 70%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
   }
 
   .searchbox input {
-    width: 11rem;
+    width: 50%;
   }
 
   .searchbox .search p,
@@ -507,6 +515,11 @@ footer {
 
   .filters {
     padding-inline: 1rem;
+    width: 70%;
+    min-width: 16rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   .filters__buttons li {
@@ -516,7 +529,7 @@ footer {
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    width: 10.313rem;
+    width: 44%;
     height: 2.625rem;
     margin-left: 0.5rem;
   }
@@ -525,19 +538,22 @@ footer {
     display: flex;
     align-items: center;
     padding-inline: 1rem;
+    width: 70%;
   }
 
   /* MOBILE FIRST WRAPPER */
 
   .wrapperone {
+    width: 100%;
     flex-direction: column-reverse;
-    align-content: center;
+    display: flex;
+    align-items: flex-start;
   }
 
   .maincontainer {
     background-color: var(--color-main-background);
-    width: 100%;
-    min-width: 100%;
+    width: 95%;
+    min-width: 0;
     border-radius: 0;
     display: flex;
     flex-direction: column;
@@ -549,33 +565,45 @@ footer {
     background-color: var(--color-lighter-secondary);
     height: auto;
     width: 100%;
+    padding: 0;
     border-radius: 0;
-    min-width: 23.5rem;
+    min-width: initial;
+  }
+
+  .secondarycontainer_icon {
+    margin-left: 2rem;
   }
 
   .maincard {
-    width: 21rem;
-    height: 12.5rem;
+    width: 85%;
+    height: 13.5rem;
+    margin-bottom: 1rem;
   }
 
-  .secondarycontainer_title {
-    padding-left: 1rem;
-  }
   .secondarycard_wrapper {
     flex-direction: column;
     width: 100%;
   }
 
   .secondarycard {
-    width: 20.875rem;
+    width: 90%;
     height: 9rem;
+    max-width: 23.9rem;
   }
 
   /* MOBILE SECOND WRAPPER */
 
+  .wrappertwo {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 95%;
+  }
+
   .tallcard {
-    width: 20.9rem;
-    height: 11.9rem;
+    width: 85%;
+    height: 13.9rem;
+    max-width: none;
     margin-bottom: 1rem;
   }
   /* MOBILE FOOTER */
