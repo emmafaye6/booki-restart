@@ -378,15 +378,16 @@ footer {
   }
   .maincontainer {
     width: 95%;
+    gap: 1rem;
   }
   .secondarycontainer {
     width: 95%;
   }
   .secondarycard {
-    max-width: 16rem;
+    max-width: 15.5rem;
     height: 9rem;
     margin-right: 1rem;
-    line-height: 1rem;
+    line-height: 0.8rem;
     font-size: 0.9rem;
   }
 
@@ -395,6 +396,7 @@ footer {
     height: 0.984rem;
     margin-left: 36rem;
   }
+
   .wrappertwo {
     margin-top: 0;
     justify-content: space-evenly;
@@ -543,24 +545,24 @@ footer {
     width: 100%;
     flex-direction: column-reverse;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .maincontainer {
     background-color: var(--color-main-background);
-    width: 95%;
+    width: 90vw;
     min-width: 0;
     border-radius: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .secondarycontainer {
     background-color: var(--color-lighter-secondary);
     height: auto;
-    width: 100%;
+    width: 100vw;
     padding: 0;
     border-radius: 0;
     min-width: initial;
