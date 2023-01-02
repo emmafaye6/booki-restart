@@ -353,7 +353,7 @@ footer {
 
 /* TABLET MEDIA QUERIES */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   h3 {
     font-size: 0.9rem;
   }
