@@ -30,12 +30,12 @@
       <img
         src="./assets/images/logo/Booki.png"
         alt="Booki logo"
-        class="navbar_logo"
+        class="navbar__logo"
       />
 
-      <div class="navbar_links">
-        <a href="#Hébergements">Hébergements</a>
-        <a href="#Activités">Activités</a>
+      <div class="navbar__links">
+        <a href="#housing">Hébergements</a>
+        <a href="#activities">Activités</a>
       </div>
     </div>
     <main>
@@ -57,11 +57,11 @@
               placeholder="Marseille, France"
             />
             <button type="submit" id="submit" class="searchbox__button">
-              <span class="search_text">Rechercher</span>
+              <span class="search__text">Rechercher</span>
               <img
                 src="./assets/images/icones/magnifying-glass-solid.svg"
                 alt="une icône de loupe"
-                class="search_logo"
+                class="search__logo"
               />
             </button>
           </form>
@@ -69,7 +69,7 @@
       </div>
 
       <div class="filters">
-        <h3 class="filters_title">Filtres</h3>
+        <h3 class="filters__title">Filtres</h3>
         <ul class="filters__buttons">
           <li>
             <img
@@ -112,16 +112,16 @@
       </div>
 
       <div class="wrapperone">
-        <div class="maincontainer" id="Hébergements">
-          <h1 class="container_title">Hébergements à Marseille</h1>
+        <div class="maincontainer" id="housing">
+          <h1 class="container__title">Hébergements à Marseille</h1>
 
           <article class="maincard">
             <a href="/#">
               <img
-                class="maincard_image"
+                class="maincard__image"
                 src="./assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                 alt="une chambre avec lits superposés" />
-              <div class="maincard_textwrapper">
+              <div class="maincard__textwrapper">
                 <h3>Auberge La Canebière</h3>
                 <p>Nuit à partir de 25€</p>
               </div>
@@ -153,10 +153,10 @@
           <article class="maincard">
             <a href="/#">
               <img
-                class="maincard_image"
+                class="maincard__image"
                 src="./assets/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                 alt="une chambre grise avec deux lits simples" />
-              <div class="maincard_textwrapper">
+              <div class="maincard__textwrapper">
                 <h3>Hôtel du port</h3>
                 <p>Nuit à partir de 52€</p>
               </div>
@@ -188,11 +188,11 @@
           <article class="maincard">
             <a href="/#">
               <img
-                class="maincard_image"
+                class="maincard__image"
                 src="./assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                 alt="une chambre avec un lit double et une grande armoire avec un miroir"
               />
-              <div class="maincard_textwrapper">
+              <div class="maincard__textwrapper">
                 <h3>Hôtel Les mouettes</h3>
                 <p>Nuit à partir de 76€</p>
               </div>
@@ -224,11 +224,11 @@
           <article class="maincard">
             <a href="/#">
               <img
-                class="maincard_image"
+                class="maincard__image"
                 src="./assets/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                 alt="une chambre ensoleillée avec un lit double et des coussins à rayures bleues et blanches"
               />
-              <div class="maincard_textwrapper">
+              <div class="maincard__textwrapper">
                 <h3>Hôtel de la mer</h3>
                 <p>Nuit à partir de 46€</p>
               </div>
@@ -260,16 +260,16 @@
           <article class="maincard">
             <a href="/#">
               <img
-                class="maincard_image"
+                class="maincard__image"
                 src="./assets/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                 alt="une chambre à l'ambiance boisée et aux lits superposés"
               />
-              <div class="maincard_textwrapper">
-                <div class="maincard_textwrapper">
-                  <h3>Hôtel Chez Amina</h3>
-                  <p>Nuit à partir de 23€</p>
-                </div>
+
+              <div class="maincard__textwrapper">
+                <h3>Hôtel Chez Amina</h3>
+                <p>Nuit à partir de 23€</p>
               </div>
+
               <div class="mainstarwrapper">
                 <img
                   class="staricons"
@@ -298,11 +298,11 @@
           <article class="maincard">
             <a href="/#">
               <img
-                class="maincard_image"
+                class="maincard__image"
                 src="./assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                 alt="une chambre somple avec un lit double et un bureau"
               />
-              <div class="maincard_textwrapper">
+              <div class="maincard__textwrapper">
                 <h3>Vieux Port</h3>
                 <p>Nuit à partir de 96€</p>
               </div>
@@ -334,15 +334,15 @@
           </article>
         </div>
         <div class="secondarycontainer">
-          <section class="secondarycontainer_title">
+          <section class="secondarycontainer__title">
             <h1>Les plus populaires</h1>
             <img
               src="./assets/images/icones/chart-line-solid.svg"
               alt="icône d'une courbe montante"
-              class="secondarycontainer_icon"
+              class="secondarycontainer__icon"
             />
           </section>
-          <div class="secondarycard_wrapper">
+          <div class="secondarycard__wrapper">
             <a href="/#"
               ><article class="secondarycard">
                 <img
@@ -350,7 +350,7 @@
                   alt="une chambre verte avec un grand miroir et un lit double"
                   class="secondarycard_image"
                 />
-                <div class="secondarycard_textwrapper">
+                <div class="secondarycard__textwrapper">
                   <h3>Hôtel Le soleil du matin</h3>
                   <p>Nuit à partir de 128€</p>
                   <div class="secondarystarwrapper">
@@ -386,7 +386,7 @@
                   alt="une chambre spacieuse avec un lit kingsize"
                   class="secondarycard_image"
                 />
-                <div class="secondarycard_textwrapper">
+                <div class="secondarycard__textwrapper">
                   <h3>Chambres d’hôtes Au cœur de l’eau</h3>
                   <p>Nuit à partir de 71€</p>
                   <div class="secondarystarwrapper">
@@ -422,7 +422,7 @@
                   alt="une chambre simple avec un lit double"
                   class="secondarycard_image"
                 />
-                <div class="secondarycard_textwrapper">
+                <div class="secondarycard__textwrapper">
                   <h3>Hôtel Bleu et Blanc</h3>
                   <p>Nuit à partir de 68€</p>
                   <div class="secondarystarwrapper">
@@ -453,12 +453,12 @@
           </div>
         </div>
       </div>
-      <h1 class="tallcard_title">Activités à Marseille</h1>
-      <div class="wrappertwo" id="Activités">
+      <h1 class="tallcard__title">Activités à Marseille</h1>
+      <div class="wrappertwo" id="activities">
         <article class="tallcard">
           <a href="/#">
             <img
-              class="tallcard_image"
+              class="tallcard__image"
               alt="des bâteaux dans un port"
               src="./assets/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
             />
@@ -468,7 +468,7 @@
         <article class="tallcard">
           <a href="/#">
             <img
-              class="tallcard_image"
+              class="tallcard__image"
               alt="un paysage aride avec un fort"
               src="./assets/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
             />
@@ -478,7 +478,7 @@
         <article class="tallcard">
           <a href="/#">
             <img
-              class="tallcard_image"
+              class="tallcard__image"
               alt="des calanques et la mer"
               src="./assets/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
             />
@@ -488,7 +488,7 @@
         <article class="tallcard">
           <a href="/#">
             <img
-              class="tallcard_image"
+              class="tallcard__image"
               alt="un village méditérranéen, une église au loin"
               src="./assets/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
             />
@@ -500,18 +500,18 @@
     <footer>
       <div class="footer">
         <ul>
-          <li class="footer_bold">À propos</li>
+          <li class="footer--bold">À propos</li>
           <li>Fonctionnement du site</li>
           <li>Conditions générales</li>
           <li>Données et confidentialité</li>
         </ul>
         <ul>
-          <li class="footer_bold">Nos hébergements</li>
+          <li class="footer--bold">Nos hébergements</li>
           <li>Charte qualité</li>
           <li>Proposer votre hôtel</li>
         </ul>
         <ul>
-          <li class="footer_bold">Assistance</li>
+          <li class="footer--bold">Assistance</li>
           <li>Centre d’aide</li>
           <li>Nous contacter</li>
         </ul>
