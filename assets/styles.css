@@ -6,6 +6,7 @@
   --color-lighter-secondary: #f2f2f2;
   --color-accent: #0065fc;
   --color-lighter-accent: #deebff;
+
   /* FONT VARIABLES */
   --font-raleway: "Raleway", sans-serif;
   --font-small: 1rem;
@@ -329,13 +330,14 @@ h3 {
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-self: center;
   margin-top: 2.5rem;
+  width: 95%;
 }
 .footer {
   background-color: var(--color-lighter-secondary);
   height: auto;
-  width: 80%;
+  width: 100%;
   padding: 2rem 15rem;
   flex-direction: row;
   display: flex;
@@ -431,6 +433,8 @@ footer {
 
   .footer {
     padding: 2rem 5rem;
+    width: 75%;
+    margin: 0 auto;
   }
 }
 
@@ -590,10 +594,11 @@ footer {
   .secondarycard__wrapper {
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
 
   .secondarycard {
-    width: 90%;
+    width: 21rem;
     height: 9rem;
     max-width: 23.9rem;
     margin-left: 1rem;
@@ -606,7 +611,7 @@ footer {
     flex-direction: column;
     display: flex;
     align-items: center;
-    width: 95%;
+    width: 100%;
   }
 
   .tallcard {
